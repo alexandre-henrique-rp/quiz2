@@ -1,5 +1,5 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import db from '../db.json'
+import db from '../db.json';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -8,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     /* New styles */
     display: flex;
     flex-direction: column;

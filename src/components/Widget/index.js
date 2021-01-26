@@ -9,6 +9,7 @@ const Widget = styled.div`
   }};
   border-radius: 4px;
   overflow: hidden;
+
   h1, h2, h3 {
     font-size: 16px;
     font-weight: 700;
