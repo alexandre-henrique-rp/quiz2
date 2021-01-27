@@ -5,13 +5,9 @@ import QuizLogo from '../src/components/QuizLogo'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
+import Head from 'next/head';
 
-// const BackgroundImage = styled.div`
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `;
+
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -27,6 +23,9 @@ export const QuizContainer = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>Quiz - Dungeons and Dragons</title>
+      </Head>
       <QuizContainer>
         <QuizLogo />
         <Widget>
