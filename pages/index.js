@@ -29,6 +29,9 @@ export default function Home() {
         <meta property="og:description" content="Venha testar seus conhecimentos Sobre a animeção Caverna do Dragão" />
         <meta property="og:url" content="https://caverna-do-drago-quiz.alexandre-herique.vercel.app/" />
         <meta property="og:image" content="https://i.pinimg.com/originals/04/2f/4a/042f4af66eaca08be86f2bc87144f623.jpg" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="300" /> 
+        <meta property="og:image:height" content="300" /> 
         <title>Quiz - Caverna do Dragão</title>
       </Head>
       <QuizContainer>
