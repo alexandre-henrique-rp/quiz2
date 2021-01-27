@@ -24,7 +24,12 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>Quiz - Dungeons and Dragons</title>
+        <meta property="og:title" content="Quiz Caverna do Dragão" />
+        <meta property="og:type" content="game" />
+        <meta property="og:description" content="Venha testar seus conhecimentos Sobre a animeção Caverna do Dragão" />
+        <meta property="og:url" content="https://caverna-do-drago-quiz.alexandre-herique.vercel.app/" />
+        <meta property="og:image" content="https://i.pinimg.com/originals/04/2f/4a/042f4af66eaca08be86f2bc87144f623.jpg" />
+        <title>Quiz - Caverna do Dragão</title>
       </Head>
       <QuizContainer>
         <QuizLogo />
