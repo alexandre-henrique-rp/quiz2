@@ -1,4 +1,6 @@
 /* eslint-disable func-names */
+/* eslint-disable no-restricted-globals */
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 import Head from 'next/head';
 import styled from 'styled-components';
@@ -10,6 +12,8 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import Button from '../src/components/Button';
+import Input from '../src/components/Input';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -39,6 +43,7 @@ export default function Home() {
         <title>Quiz - Caverna do Dragão</title>
       </Head>
       <QuizContainer>
+        const router = useRouter();
         <QuizLogo />
         <Widget>
           <Widget.Header>
@@ -54,17 +59,15 @@ export default function Home() {
             }}
             >
               {/* router manda para proxima pagina  */}
-              <input
-                onChange={function (infosDoEventos) {
-                  setNome(infosDoEventos.target.value);
-                }}
-                placeholder="Nickname"
+              <Input
+                name="nomeDoUsuario"
+                onChange={(infosDoEvento) => setNome(infosDoEvento.target.value)}
+                placeholder="NickName"
+                value={nome}
               />
-              <button type="submit" disabled={nome.length === 0}>
-                Bora jogar
-                {' '}
-                {nome}
-              </button>
+              <Button type="submit" disabled={nome.length === 0}>
+                {`Bora jogar ${nome}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
